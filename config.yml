@@ -9,9 +9,9 @@ params:
   profileMode:
     enabled: true
     title: "Loic Coyle" # optional default will be site title
-    subtitle: "A guy that like to code stuff"
+    subtitle: "☢️ Nuclear Engineer | 🖥️ Software Dev | 🧠 ML Engineer | 💡 Data Scientist | 🐧 Lunix nerd"
     imageUrl: "<image link>" # optional
-    imageTitle: "" # optional
+    imageTitle: "Profile Image" # optional
     imageWidth: 120 # custom size
     imageHeight: 120 # custom size
     # buttons:
