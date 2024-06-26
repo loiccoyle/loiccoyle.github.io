@@ -1,5 +1,10 @@
+title: Loic Coyle
 theme: ["PaperMod"]
+
 params:
+  env: production
+  author: Loic Coyle
+
   profileMode:
     enabled: true
     title: "<Title>" # optional default will be site title
