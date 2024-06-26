@@ -1,5 +1,6 @@
 title: Loïc Coyle
 theme: ["PaperMod"]
+baseURL: "https://loiccoyle.com"
 
 minify:
   disableXML: true
@@ -9,7 +10,7 @@ menu:
     - identifier: projects
       name: projects
       url: projects/
-      weight: 10
+      weight: 1
 
 params:
   env: production
@@ -24,19 +25,19 @@ params:
     enabled: true
     title: "Loïc Coyle" # optional default will be site title
     subtitle: "☢️ Nuclear Eng. | 🖥️ Software Dev | 🧠 ML Eng. | 💡 Data Science | 🐧 Lunix"
-    imageUrl: "<image link>" # optional
-    imageTitle: "Profile Image" # optional
-    # imageWidth: 120 # custom size
-    # imageHeight: 120 # custom size
+    imageUrl: "images/headshot.jpg"
+    imageTitle: "Profile Image"
+    imageWidth: 300
+    imageHeight: 300
     buttons:
       - name: Projects
         url: "projects/"
       - name: Resume
         url: "./resume.pdf"
-      - name: Github
-        url: "https://github.com/loiccoyle"
-  socialIcons: # optional
+  socialIcons:
     - name: "github"
       url: "https://github.com/loiccoyle"
     - name: "linkedin"
       url: "https://linkedin.com/in/loiccoyle"
+    - name: "email"
+      url: "mailto:loic.coyle@hotmail.fr"
