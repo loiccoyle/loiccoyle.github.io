@@ -24,7 +24,7 @@ params:
   profileMode:
     enabled: true
     title: "Loïc Coyle" # optional default will be site title
-    subtitle: "☢️ Nuclear Eng. | 🖥️ Software Dev | 🧠 ML Eng. | 💡 Data Science | 🐧 Lunix"
+    subtitle: "☢️ Nuclear Eng. | 🖥️ Software Dev. | 🧠 AI/ML | 💡 Data Science | 🐧 Lunix"
     imageUrl: "images/headshot.jpg"
     imageTitle: "Profile Image"
     imageWidth: 300
