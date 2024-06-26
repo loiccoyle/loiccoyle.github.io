@@ -5,6 +5,7 @@ params:
   env: production
   author: Loic Coyle
   defaultTheme: dark
+  hideFooter: true
 
   profileMode:
     enabled: true
