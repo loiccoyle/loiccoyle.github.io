@@ -9,7 +9,7 @@ params:
   profileMode:
     enabled: true
     title: "Loic Coyle" # optional default will be site title
-    subtitle: "☢️ Nuclear Engineer | 🖥️ Software Dev | 🧠 ML Engineer | 💡 Data Scientist | 🐧 Lunix nerd"
+    subtitle: "☢️ Nuclear Eng. | 🖥️ Software Dev | 🧠 ML Eng. | 💡 Data Science | 🐧 Lunix"
     imageUrl: "<image link>" # optional
     imageTitle: "Profile Image" # optional
     imageWidth: 120 # custom size
