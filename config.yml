@@ -4,23 +4,24 @@ theme: ["PaperMod"]
 params:
   env: production
   author: Loic Coyle
+  defaultTheme: dark
 
   profileMode:
     enabled: true
-    title: "<Title>" # optional default will be site title
-    subtitle: "This is subtitle"
+    title: "Loic Coyle" # optional default will be site title
+    subtitle: "A guy that like to code stuff"
     imageUrl: "<image link>" # optional
-    imageTitle: "<title of image as alt>" # optional
+    imageTitle: "" # optional
     imageWidth: 120 # custom size
     imageHeight: 120 # custom size
-    buttons:
-      - name: Archive
-        url: "/archive"
-      - name: Github
-        url: "https://github.com/"
+    # buttons:
+    # - name: Archive
+    #   url: "/archive"
+    # - name: Github
+    #   url: "https://github.com/loiccoyle"
 
   socialIcons: # optional
-    - name: "<platform>"
-      url: "<link>"
-    - name: "<platform 2>"
-      url: "<link2>"
+    - name: "github"
+      url: "https://github.com/loiccoyle"
+    - name: "linkedin"
+      url: "https://linkedin.com/in/loiccoyle"
