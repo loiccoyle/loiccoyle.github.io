@@ -129,7 +129,7 @@ The ticker process iterates over the configured tickers, for each one, it fetche
 
 ## Continuous Deployment
 
-To rebuild the image on every release, a [github self-hosted action runner](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners) is set up on a RPi I had lying around. Every release, a trigger is sent off from a `TinyTicker` workflow, to start the the image build job on my RPi. Once the image is built, is is uploaded the shared google drive folder.
+To rebuild the image on every release, a [github self-hosted action runner](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners) is set up on a RPi I had lying around. Every release, a trigger is sent off from a `TinyTicker` workflow, to start the the image build job on my RPi. Once the image is built, it is uploaded the shared google drive folder.
 
 ```yml
 name: Build TinyTicker RPi image
