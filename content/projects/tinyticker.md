@@ -131,7 +131,26 @@ The ticker process iterates over the configured tickers, for each one, it fetche
 
 ## Continuous Deployment
 
-To rebuild the image on every release, a [github self-hosted action runner](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners) is set up on a RPi I had lying around. Every release, a trigger is sent off from a `TinyTicker` workflow, to start the the image build job on my RPi. Once the image is built, it is uploaded a shared google drive folder.
+To rebuild the image on every release, a [github self-hosted action runner](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners) is set up on a RPi I had lying around.
+Every release, a trigger is sent off from a [`TinyTicker` workflow](https://github.com/loiccoyle/tinyticker/blob/main/.github/workflows/ci.yml), to start the image build job on my RPi.
+Once the image is built, it is uploaded to a shared google drive folder.
+
+Here is the trigger:
+```yml
+...
+trigger_image_build:
+    name: Trigger tinyticker disk image build
+    needs: publish
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Workflow dispatch
+        run: gh workflow run "Build TinyTicker RPi image" --json --ref refs/heads/main --repo loiccoyle/private.actionsrunner
+        env:
+          GH_TOKEN: ${{ secrets.PRIVATE_RUNNER_ACCESS_TOKEN }}
+```
+
+And now the image build job itself:
 
 ```yml
 name: Build TinyTicker RPi image
@@ -186,4 +205,3 @@ jobs:
 ```
 
 > Add with that the [disk image](https://drive.google.com/drive/folders/1U-PGzkOtSynN6FGDq2MsXF9kXGdkzd0D) is continuously built and is always up to date with the latest release of `TinyTicker`.
-
