@@ -136,18 +136,19 @@ Every release, a trigger is sent off from a [`TinyTicker` workflow](https://gith
 Once the image is built, it is uploaded to a shared google drive folder.
 
 Here is the trigger:
+
 ```yml
-...
+---
 trigger_image_build:
-    name: Trigger tinyticker disk image build
-    needs: publish
-    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
-    runs-on: ubuntu-latest
-    steps:
-      - name: Workflow dispatch
-        run: gh workflow run "Build TinyTicker RPi image" --json --ref refs/heads/main --repo loiccoyle/private.actionsrunner
-        env:
-          GH_TOKEN: ${{ secrets.PRIVATE_RUNNER_ACCESS_TOKEN }}
+  name: Trigger tinyticker disk image build
+  needs: publish
+  if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
+  runs-on: ubuntu-latest
+  steps:
+    - name: Workflow dispatch
+      run: gh workflow run "Build TinyTicker RPi image" --json --ref refs/heads/main --repo loiccoyle/private.actionsrunner
+      env:
+        GH_TOKEN: ${{ secrets.PRIVATE_RUNNER_ACCESS_TOKEN }}
 ```
 
 And now the image build job itself:
@@ -205,3 +206,4 @@ jobs:
 ```
 
 > Add with that the [disk image](https://drive.google.com/drive/folders/1U-PGzkOtSynN6FGDq2MsXF9kXGdkzd0D) is continuously built and is always up to date with the latest release of `TinyTicker`.
+
