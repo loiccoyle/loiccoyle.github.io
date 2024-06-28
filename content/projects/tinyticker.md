@@ -3,7 +3,7 @@ author:
   - Loïc Coyle
 title: 'TinyTicker: a tiny RPi powered ePaper ticker'
 date: '2024-06-27'
-description: 'How the ticker ticks.'
+description: How the ticker ticks.
 summary: How the ticker ticks.
 tags:
   - RaspberryPi
@@ -14,10 +14,10 @@ ShowToc: true
 TocOpen: false
 cover:
   image: 'https://i.imgur.com/J4k3PCM.png'
-  alt: "Photo of a finance OHLC chart on a small ePaper display"
+  alt: Photo of a finance OHLC chart on a small ePaper display
 socialIcons:
-  - name: "github"
-    url: "https://github.com/loiccoyle"
+  - name: github
+    url: 'https://github.com/loiccoyle'
 ---
 # Inspiration
 
@@ -106,6 +106,7 @@ To show the plots on the ePaper display [WaveShare](https://waveshare.com) provi
 On startup, the RPi starts the web app and the ticker process.
 
 The user connects to the web app and sets up their tickers. The web app writes the config file:
+
 ```json
 {
   "tickers": [
@@ -127,7 +128,6 @@ A TCP socket is also opened between the `flask` app and the ticker process to al
 The ticker process iterates over the configured tickers, for each one, it fetches data, create a plot, displays the plot on the ePaper display, puts it into sleep mode and sleeps the configured time before moving on to the next ticker.
 
 {{< figure src="/images/tinyticker/tinyticker.svg" title="Diagram of TinyTicker" align=center width=300 >}}
-
 
 ## Continuous Deployment
 
@@ -186,3 +186,4 @@ jobs:
 ```
 
 > Add with that the [disk image](https://drive.google.com/drive/folders/1U-PGzkOtSynN6FGDq2MsXF9kXGdkzd0D) is continuously built and is always up to date with the latest release of `TinyTicker`.
+
