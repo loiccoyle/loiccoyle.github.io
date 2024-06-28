@@ -1,0 +1,38 @@
+direction: down
+
+vars: {
+  d2-config: {
+    layout-engine: elk
+    # Terminal theme code
+    theme-id: 300
+  }
+}
+
+TinyTicker: {
+  Config File: {
+      shape: page
+  }
+
+  Ticker Process: {
+    Config Monitor -> Ticker Thread: Restart {style: {
+        stroke-dash: 3
+      }
+    }
+  }
+
+  Web App <-> Config File: Read & Write
+  Web App -> Ticker Process.Ticker Thread: TCP socket
+
+  Ticker Process.Config Monitor <- Config File: Read
+  Ticker Process.Ticker Thread -> ePaper Display
+}
+
+user: {
+  shape: person
+  width: 64
+}
+Data API: {
+    shape: cloud
+}
+TinyTicker.Ticker Process.Ticker Thread <-> Data API
+user -> TinyTicker.Web App
