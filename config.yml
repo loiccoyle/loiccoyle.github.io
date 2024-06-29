@@ -49,3 +49,5 @@ params:
       url: "https://linkedin.com/in/loiccoyle"
     - name: "email"
       url: "mailto:loic.coyle@hotmail.fr"
+
+  analytics.google.SiteVerificationTag: G-KZ256QKB60
