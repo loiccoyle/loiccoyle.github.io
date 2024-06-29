@@ -50,6 +50,6 @@ params:
     - name: "email"
       url: "mailto:loic.coyle@hotmail.fr"
 
-  analytics:
-    google:
-      SiteVerificationTag: G-KZ256QKB60
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: G-KZ256QKB60
