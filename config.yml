@@ -15,16 +15,20 @@ minify:
 
 menu:
   main:
+    - identifier: posts
+      name: posts
+      url: posts/
+      weight: 1
     - identifier: projects
       name: projects
       url: projects/
-      weight: 1
+      weight: 2
 
 params:
   env: production
   author: Loïc Coyle
   defaultTheme: dark
-  mainSections: ["projects"]
+  mainSections: ["posts", "projects"]
   hideFooter: true
   ShowShareButtons: true
   ShowReadingTime: true
