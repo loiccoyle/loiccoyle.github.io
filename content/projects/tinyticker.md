@@ -18,6 +18,8 @@ cover:
   image: 'https://i.imgur.com/J4k3PCM.png'
   alt: Photo of a finance OHLC chart on a small ePaper display
 ---
+A quick overview of how and why I built [{{< ico bootstrap github >}} loiccoyle/tinyticker](https://github.com/loiccoyle/tinyticker).
+
 # Inspiration
 
 I wanted to make a ticker after seeing many great variations on the theme:
