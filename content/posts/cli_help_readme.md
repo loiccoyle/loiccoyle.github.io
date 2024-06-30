@@ -22,7 +22,7 @@ But it gets very annoying to have to paste in the readme every time you an optio
 
 # How
 
-One nifty solution is to automatically insert the help message with the help of a workflow.
+One nifty solution is to automatically insert the help message with the help of a workflow. I'll be showing how I set it up for my [{{< ico bootstrap github >}} loiccoyle/phomo](https://github.com/loiccoyle/phomo) repo, it'll need to be adapted for use in other projects.
 
 ## Markers
 
@@ -43,7 +43,7 @@ We can just use `markdown` comments:
 
 ## Inserting the help message
 
-So we want to insert the help message in between the markers. This can be done any number of ways. I'll be showing how I set it up for my [{{< ico bootstrap github >}} loiccoyle/phomo](https://github.com/loiccoyle/phomo) repo, I just use a small `awk` command.
+So we want to insert the help message in between the markers. This can be done any number of ways. I just use a small `awk` command.
 
 ````sh {hl_lines=[7,8,9,10]}
 awk -i inplace '
@@ -71,8 +71,6 @@ With this scripts we:
 - close the code block
 
 > Make sure to use the same start and end markers in the `awk` command and the `README.md` file.
-
-Feel free to tweak this snippet to your needs.
 
 ## Setup the workflow
 
