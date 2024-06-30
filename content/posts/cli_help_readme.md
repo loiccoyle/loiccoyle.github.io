@@ -66,7 +66,7 @@ awk -i inplace '
 With this scripts we:
 
 - insert the code starting block fence with the `console` syntax highlighting
-- add a line with `$ phomo -h` to show to get the help message from the command line
+- add a line with `$ phomo -h` to show how to get the help message from the command line
 - insert the actual help message by running `poetry run phomo -h`
 - close the code block
 
