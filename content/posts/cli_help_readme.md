@@ -3,8 +3,8 @@ author:
   - Loïc Coyle
 title: '--help in the README'
 date: '2024-06-30'
-description: Keep your CLI's help message up to date in the README
-summary: Keep your CLI's help message up to date in the README
+description: How to keep your CLI's help message up to date in the README
+summary: How to keep your CLI's help message up to date in the README
 categories:
   - Posts
 tags:
