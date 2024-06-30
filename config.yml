@@ -32,6 +32,7 @@ params:
   hideFooter: true
   ShowShareButtons: true
   ShowReadingTime: true
+  ShowCodeCopyButtons: true
 
   profileMode:
     enabled: true
