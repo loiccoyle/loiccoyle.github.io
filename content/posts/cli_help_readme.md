@@ -14,15 +14,15 @@ TocOpen: false
 ---
 # Why?
 
-When developing a CLI, it is helpful to show the `--help` message in your project's `README.md` to quickly its show the features and options to a prospective user.
+When developing a CLI, it is helpful to show the `--help` message in your project's `README.md` to quickly show its features and options to a prospective user.
 
 {{< figure src="/images/posts/cli_help_readme/phomo_help.png" title="Screenshot of phomo's help message in the project's readme" align=center link="https://github.com/loiccoyle/phomo" target="_blank" >}}
 
-But it gets very annoying to have to paste in the readme every time you an option to the CLI or tweak the help message in any way.
+But it gets very annoying to have to paste in the readme every time you add an option to the CLI or tweak the help message in any way.
 
 # How
 
-One nifty solution is to automatically insert the help message with the help of a workflow. I'll be showing how I set it up for my [{{< ico bootstrap github >}} loiccoyle/phomo](https://github.com/loiccoyle/phomo) repo, it'll need to be adapted for use in other projects.
+One nifty solution is to automatically insert the help message using a workflow. I'll be showing how I set it up for my [{{< ico bootstrap github >}} loiccoyle/phomo](https://github.com/loiccoyle/phomo) repo, it'll need to be adapted for use in other projects.
 
 ## Markers
 
