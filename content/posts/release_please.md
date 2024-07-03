@@ -20,7 +20,7 @@ It then tracks the release's changes in a PR. When the PR is merged, the commit 
 
 # How to set up `release-please`?
 
-> I'll be using the [{{< ico bootstrap github >}} googleapis/release-please-action](https://github.com/googleapis/release-please-action).
+> I'll be using the [{{< ico bootstrap github >}} googleapis/release-please-action](https://github.com/googleapis/release-please-action) github action.
 
 ## Config
 
