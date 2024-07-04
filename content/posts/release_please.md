@@ -45,7 +45,7 @@ Make sure to swap use the appropriate `release-type` of your repo.
 
 If there isn't an appropriate `release-type` for your repo, you can always use `simple` and tell `release-please` where to update the version string by using the `extra-files` option paired with the `x-release-please-version` marker.
 
-> For the full list of configuration options, see the [schema](https://github.com/googleapis/release-please/blob/main/schemas/config.json) and the [docs](https://github.com/googleapis/release-please/blob/main/schemas/config.json).
+> For the full list of configuration options, see the [schema](https://github.com/googleapis/release-please/blob/main/schemas/config.json) and the [docs](https://github.com/googleapis/release-please/blob/main/docs/manifest-releaser.md#configfile).
 
 <details>
   <summary><b>Example using <code>extra-files</code> and <code>x-release-please-version</code> marker.</b></summary>
