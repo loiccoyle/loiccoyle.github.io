@@ -141,7 +141,7 @@ jobs:
   publish:
     needs:
       - release-please
-    if: needs.release-please.outputs.release.releases_created
+    if: needs.release-please.outputs.releases_created
     runs-on: ubuntu-latest
     steps:
       # ...
