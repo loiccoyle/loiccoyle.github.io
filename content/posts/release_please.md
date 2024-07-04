@@ -129,7 +129,7 @@ name: release-please
 jobs:
   release-please:
     outputs:
-      release_created: ${{ steps.release.release_created }}
+      releases_created: ${{ steps.release.releases_created }}
     runs-on: ubuntu-latest
     steps:
       - uses: googleapis/release-please-action@v4
@@ -141,7 +141,7 @@ jobs:
   publish:
     needs:
       - release-please
-    if: needs.release-please.outputs.release.release_created
+    if: needs.release-please.outputs.release.releases_created
     runs-on: ubuntu-latest
     steps:
       # ...
