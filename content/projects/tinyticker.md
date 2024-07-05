@@ -15,7 +15,7 @@ tags:
 ShowToc: true
 TocOpen: false
 cover:
-  image: 'https://i.imgur.com/J4k3PCM.png'
+  image: /images/projects/tinyticker/cover.jpg
   alt: Photo of a finance OHLC chart on a small ePaper display
 ---
 A quick overview of how and why I built [{{< ico bootstrap github >}} loiccoyle/tinyticker](https://github.com/loiccoyle/tinyticker).
