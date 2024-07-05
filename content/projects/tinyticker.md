@@ -24,11 +24,11 @@ A quick overview of how and why I built [{{< ico bootstrap github >}} loiccoyle/
 
 I wanted to make a ticker after seeing many great variations on the theme:
 
-{{< figure src="/images/projects/tinyticker/reddit_tickers.png" title="Screenshot of tickers found on reddit" align=center link="<https://www.reddit.com/r/raspberry_pi/search/?q=ticker&type=link>" target="_blank" >}}
+{{< figure src="/images/projects/tinyticker/reddit_tickers.png" title="Screenshot of tickers found on reddit" align=center link="https://www.reddit.com/r/raspberry_pi/search/?q=ticker&type=link" target="_blank" >}}
 
 And even some selling for a pretty penny:
 
-{{< figure src="/images/projects/tinyticker/veeb_ticker.png" title="A ticker being sold for CHF 125" align=center link="<https://www.veeb.ch/store/p/pauline-cryptocurrency-price-ticker>" target="_blank" >}}
+{{< figure src="/images/projects/tinyticker/veeb_ticker.png" title="A ticker being sold for CHF 125" align=center link="https://www.veeb.ch/store/p/pauline-cryptocurrency-price-ticker" target="_blank" >}}
 
 While functionally these projects work perfectly well, they are lacking in terms of ease of setup and configuration. Take for examples the one from **[veeb](https://www.veeb.ch/store/p/pauline-cryptocurrency-price-ticker)** it runs **[{{< ico bootstrap github >}}veebch/btcticker](https://github.com/veebch/btcticker)**.
 
