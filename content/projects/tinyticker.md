@@ -8,6 +8,7 @@ summary: How the ticker ticks.
 categories:
   - Projects
 tags:
+  - Python
   - RaspberryPi
   - Finance
   - ePaper
