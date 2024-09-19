@@ -4,7 +4,7 @@ author:
 title: "Phomo: the photo mosaic python library"
 date: "2024-09-04"
 description: Don't FOMO on Phomo
-summary: Don't FOMO On Phomo
+summary: Don't FOMO on Phomo
 categories:
   - Projects
 tags:
