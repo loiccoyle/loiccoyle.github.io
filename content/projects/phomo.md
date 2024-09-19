@@ -111,4 +111,20 @@ To create good looking photo mosaics, it helps to have similar colour distributi
 
 An alternative method to speed up the distance metric computation is to use the GPU to accelerate the computation. `phomo` provides a `CUDA` kernel which computes the loss metric on the GPU. This requires the user to have a compatible GPU as well as enough VRAM to store the master regions and tiles. `phomo` uses the [`numba` library](https://numba.readthedocs.io/en/stable/cuda/overview.html) to compile `python` code to `CUDA` kernels. This method significantly speeds up the distance matrix computation.
 
+```python
+...
+@cuda.jit
+def compute_d_matrix_kernel(master_arrays, pool_arrays, d_matrix):
+    i, j = cuda.grid(2)  # type: ignore
+    if i < master_arrays.shape[0] and j < pool_arrays.shape[0]:
+        distance = 0.0
+        for x in range(master_arrays.shape[1]):
+            for y in range(master_arrays.shape[2]):
+                for c in range(master_arrays.shape[3]):
+                    diff = master_arrays[i, x, y, c] - pool_arrays[j, x, y, c]
+                    distance += diff * diff
+        d_matrix[i, j] = math.sqrt(distance)
+...
+```
+
 > An example showcasing these two methods is provided in the [performance example](https://loiccoyle.com/phomo/usage/python_package/performance/). **On my system, GPU acceleration leads to a 30x speed increase.**
