@@ -66,7 +66,7 @@ The tile of the left contains the average colour of the master region, and the t
 
 When using the average colour difference metric, the assignment algorithm would favour the tile of the left which would lose the contrast of the master region. By using the full colour distribution difference, the assignment algorithm would favour the tile of the right, which does a better job at preserving the contrast of the master region.
 
-> `phomo` actually implements a [few different metrics](https://github.com/loiccoyle/phomo/blob/main/phomo/metrics.py) which all make use of the spatial distribution of the colours within the tiles and master regions.
+> `phomo` actually implements a [few different metrics](https://github.com/loiccoyle/phomo/blob/main/phomo/metrics.py) which all make use of the spatial distribution of the colours within the tiles and master regions. The effect of the different metrics is showcased in the [metrics example](https://loiccoyle.com/phomo/usage/python_package/metrics/).
 
 ### Tile assignment algorithm
 
@@ -85,7 +85,7 @@ When exploring existing libraries, I quite liked the grid visualization and subd
 
 {{< figure src="/images/projects/phomo/photomosaic_grid.png" title="Grid snippet from the photomosaic docs" align=center width="600px" >}}
 
-As such this feature was implemented in `phomo` and an example of its usage is shown in the [example `jupyter` notebooks provided](https://github.com/loiccoyle/phomo/blob/main/examples/faces.ipynb).
+As such this feature was implemented in `phomo` and an example of its usage is shown in the [faces example](https://loiccoyle.com/phomo/usage/python_package/faces/#mosaic).
 
 {{< figure src="/images/projects/phomo/phomo_grid.png" title="Grid snippet from the phomo examples" align=center width="400px" >}}
 
@@ -103,7 +103,7 @@ To create good looking photo mosaics, it helps to have similar colour distributi
 - **match the tile images to the master image**: This method uses the [Reinhard colour transfer algorithm](https://www.semanticscholar.org/paper/Color-Transfer-between-Images-Reinhard-Ashikhmin/f3a11158e9d8bdfdf07dca756335c084fce0123e) to transfer the colour distribution of the master image to the tiles. This will leave the master image unchanged but will alter the tile images.
 - **match the master image to the tile images**: Similar to the previous method, this uses the same colour transfer algorithm to transger the colour distribution of the tiles to the master image. This will leave the tile images unchanged but will alter the master image.
 
-> These three methods are showcased in the [example colour matching notebook](https://github.com/loiccoyle/phomo/blob/main/examples/matching.ipynb).
+> These three methods are showcased in the [colour matching example](https://loiccoyle.com/phomo/usage/python_package/matching/).
 
 ### Concurrent computation
 
@@ -111,4 +111,4 @@ To create good looking photo mosaics, it helps to have similar colour distributi
 
 An alternative method to speed up the distance metric computation is to use the GPU to accelerate the computation. `phomo` provides a `CUDA` kernel which computes the loss metric on the GPU. This requires the user to have a compatible GPU as well as enough VRAM to store the master regions and tiles. `phomo` uses the [`numba` library](https://numba.readthedocs.io/en/stable/cuda/overview.html) to compile `python` code to `CUDA` kernels. This method significantly speeds up the distance matrix computation.
 
-> An example showcasing these two methods is provided in the [example performance notebook](https://github.com/loiccoyle/phomo/blob/main/examples/performance.ipynb). **On my system, GPU acceleration leads to a 30x speed increase.**
+> An example showcasing these two methods is provided in the [performance example](https://loiccoyle.com/phomo/usage/python_package/performance/). **On my system, GPU acceleration leads to a 30x speed increase.**
