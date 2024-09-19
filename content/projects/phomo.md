@@ -19,6 +19,8 @@ cover:
 
 An introduction to [{{< ico bootstrap github >}} loiccoyle/phomo](https://github.com/loiccoyle/phomo).
 
+> The docs are available [here](https://loiccoyle.com/phomo).
+
 ## The shoulders on which I stand
 
 [Photo mosaics](https://en.wikipedia.org/wiki/Photographic_mosaic) are images composed of many smaller images arranged to best reconstruct the master image. The details of the smaller images are visible up close but blur and blend into the master image as the magnification decreases.
