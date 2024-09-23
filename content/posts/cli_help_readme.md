@@ -120,6 +120,7 @@ readme:
         commit_user_name: github-actions[bot]
         commit_user_email: github-actions[bot]@users.noreply.github.com
         commit_author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+        file_pattern: README.md
 ```
 
 In this workflow, we setup `python` and `poetry`, install the `phomo` package, then run the `make readme` recipe to insert the help message into the `README.md`. Finally, we push the changes, if there are any, back to the repo.
