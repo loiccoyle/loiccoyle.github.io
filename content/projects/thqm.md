@@ -17,7 +17,7 @@ cover:
   alt: Image with a thqm script on the left and a menu web page on the right
 ---
 
-Let's explore [{{< ico bootstrap github >}} loiccoyle/thqm-rs](https://github.com/loiccoyle/thqm-rs).
+Let's take a look at [{{< ico bootstrap github >}} loiccoyle/thqm-rs](https://github.com/loiccoyle/thqm-rs).
 
 Its a command line utility written in `rust` which generates and serves a menu web page on the local network.
 
