@@ -62,9 +62,9 @@ And let us assume that we want to decide which of the following two tiles to ass
 
 {{< figure src="/images/projects/phomo/tiles.png" title="" align=center width="500px" >}}
 
-The tile of the left contains the average colour of the master region, and the tile of the right is a picture of a cypress tree in front of a blue sky.
+The tile on the left contains the average colour of the master region, and the tile on the right is a picture of a cypress tree in front of a blue sky.
 
-When using the average colour difference metric, the assignment algorithm would favour the tile of the left which would lose the contrast of the master region. By using the full colour distribution difference, the assignment algorithm would favour the tile of the right, which does a better job at preserving the contrast of the master region.
+When using the average colour difference metric, the assignment algorithm would favour the tile on the left which would lose the contrast of the master region. By using the full colour distribution difference, the assignment algorithm would favour the tile on the right, which does a better job at preserving the contrast of the master region.
 
 > `phomo` actually implements a [few different metrics](https://github.com/loiccoyle/phomo/blob/main/phomo/metrics.py) which all make use of the spatial distribution of the colours within the tiles and master regions. The effect of the different metrics is showcased in the [metrics example](https://loiccoyle.com/phomo/usage/python_package/metrics/).
 
