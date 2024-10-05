@@ -10,6 +10,8 @@ categories:
 tags:
   - Rust
   - Scripting
+  - Command line utility
+  - Dynamic menu
 ShowToc: true
 TocOpen: false
 cover:

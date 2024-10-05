@@ -10,6 +10,8 @@ categories:
 tags:
   - Python
   - Art
+  - Photo mosaic
+  - Image processing
 ShowToc: true
 TocOpen: false
 cover:
