@@ -148,7 +148,7 @@ Then we need to add the Wasm and top level await plugins:
 npm add vite-plugin-wasm vite-plugin-top-level-await
 ```
 
-> In my case, I'm using `react` so I also need the `plugin-react` package.
+> In my case, I'm using `react` so I also need the `@vitejs/plugin-react` package.
 
 And configure `Vite` to use it, edit the `vite.config.js` file:
 
