@@ -36,11 +36,11 @@ There isn't much point delving into the inner workings of the rust library itsel
 
 What is more interesting is the web app part, and how to use go from Rust, to Wasm, to using it in the browser.
 
-### WASM is it?
+### Wasm is it?
 
 WebAssembly or Wasm is a low-level, portable binary instruction format designed to run code efficiently across different platforms. It enables high-performance execution of code in web browsers and other environments by allowing developers to compile code written in languages like C, C++, or Rust into a compact binary that can run natively on the browser's virtual machine. **Achieving near native performance with the flexibility of the web.**
 
-> WASM speed, engage!
+> Wasm speed, engage!
 
 Unlike JavaScript, which is parsed and JIT compiled at runtime by the [js engine](https://en.wikipedia.org/wiki/JavaScript_engine), Wasm code is compiled ahead of time into low-level machine instructions, allowing the compilation process to do more intensive optimizations, reducing execution overhead and increased performance. It is executed by the [Wasm virtual machine](https://en.wikipedia.org/wiki/WebAssembly#Virtual_machine) built into most modern browsers, following the [Wasm spec](https://webassembly.github.io/spec/). Wasm also offers more efficient memory management, avoiding the performance costs associated with JavaScript's dynamic typing and garbage collection systems.
 
