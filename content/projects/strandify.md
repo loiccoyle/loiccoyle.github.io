@@ -38,7 +38,7 @@ All source code is open source:
 
 ## Features
 
-First and foremost, there are not strings attached (pun intended), it is free and **all processing is done on the client device, the images never leave your device.**
+First and foremost, there are no strings attached (pun intended), it is free and **all processing is done on the client device, the images never leave your device.**
 
 Once an image is selected, it is loaded into the canvas and the user is able to place "pegs". These pegs define the connection points of the string.
 
