@@ -44,13 +44,13 @@ Once an image is selected, it is loaded into the canvas and the user is able to 
 
 {{< figure src="/images/projects/strandify/peg_tools.gif" align="center" width="500px" title="Using the brush tools to place the pegs">}}
 
-The configuration of the string art pathing algorithm is left up to the user. By default it will use a purely greedy algorithm. By setting a beam search width greater than one, it will transition to a [beam search](https://en.wikipedia.org/wiki/Beam_search).
+The configuration of the string art pathing algorithm is left up to the user. By default it will use a purely greedy algorithm. By setting a beam search width greater than one, it will transition to a [beam search](https://en.wikipedia.org/wiki/Beam_search) algorithm. This should lead to better pathing at the cost of computation.
 
 The rendering of the string art can be configured by setting the width, opacity, color of the yarn as well as the background color. These will update the generated string art without having to re-generate it.
 
 {{<figure src="/images/projects/strandify/config_options.png" width="500px" align="center" title="String art pather configuration options">}}
 
-Once the string art is generated, a player is displayed which lets you play through the string art generation process. The string art can also be downloaded as a `svg` or a `png` file.
+Once the string art is generated, a player is displayed which lets you play through the iterations of the string art generation process. The string art can also be downloaded as a `svg` or a `png` file.
 
 {{<figure src="/images/projects/strandify/player.gif" width="500px" align="center" title="Playing through the generated string art">}}
 
