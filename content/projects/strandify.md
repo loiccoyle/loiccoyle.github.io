@@ -34,7 +34,7 @@ Just like my [photo mosaic web app](https://loiccoyle.com/projects/phomo_webapp)
 All source code is open source:
 
 - `rust` crates and Wasm bindings: [{{< ico bootstrap github >}} loiccoyle/phomo](https://github.com/loiccoyle/strandify)
-- Web app: [{{< ico bootstrap github >}} loiccoyle/phomo (gh-pages)](loiccoyle/phomohttps://github.com/loiccoyle/strandify/tree/gh-pages)
+- Web app: [{{< ico bootstrap github >}} loiccoyle/phomo (gh-pages)](https://github.com/loiccoyle/strandify/tree/gh-pages)
 
 ## Features
 
