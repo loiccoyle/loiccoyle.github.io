@@ -52,7 +52,7 @@ There are a few more bells and whistles, but that's the gist of it.
 $ localleaf -h
 Easy breezy latex.
 
-Spins up a latex docker image, monitors .tex files and builds on change.
+Spins up a latex docker image, monitors source files and builds on change.
 
 Usage: localleaf [OPTIONS] [PROJECT_DIR] -- [EXTRA_ARGS]
   -h                          Show this message and exit.
