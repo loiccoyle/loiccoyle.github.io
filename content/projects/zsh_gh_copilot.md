@@ -82,8 +82,8 @@ The final step is to bind the newly registered keymaps to keys. Simply add the f
 - On macOS:
 
 ```zsh
-bindkey '¿' zsh_gh_copilot_explain  # bind Option+shift+\ to explain
-bindkey '÷' zsh_gh_copilot_suggest  # bind Option+\ to suggest
+bindkey '»' zsh_gh_copilot_explain  # bind Option+shift+\ to explain
+bindkey '«' zsh_gh_copilot_suggest  # bind Option+\ to suggest
 ```
 
 - On Linux:
