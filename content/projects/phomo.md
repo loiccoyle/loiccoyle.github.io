@@ -21,7 +21,7 @@ cover:
 
 An introduction to [{{< ico bootstrap github >}} loiccoyle/phomo](https://github.com/loiccoyle/phomo).
 
-> The docs are available [here](https://loiccoyle.com/phomo).
+> The docs are available [here](https://docs.loiccoyle.com/phomo).
 
 ## The shoulders on which I stand
 
