@@ -20,17 +20,17 @@ cover:
   alt: Screenshot of the phomo web app
 ---
 
-> 🚀 **[Check it out!](https://loiccoyle.com/phomo-rs)** 🚀
+> 🚀 **[Check it out!](https://phomo.loiccoyle.com)** 🚀
 
 Previously, I've built [{{< ico bootstrap github >}} loiccoyle/phomo](https://github.com/loiccoyle/phomo) a python package to construct [photo mosaics](https://en.wikipedia.org/wiki/Photographic_mosaic), complete with GPU acceleration.
 
 > I've written about it [here](https://loiccoyle.com/projects/phomo).
 
-As an educational project, to improve my rust skills and learn how to use [WebAssembly](https://webassembly.org/), I've built [{{< ico bootstrap github >}} loiccoyle/phomo-rs](https://github.com/loiccoyle/phomo-rs). It's a rust port of `phomo` complete with a binary crate and Wasm bindings. As well as an accompanying [web app](https://loiccoyle.com/phomo-rs).
+As an educational project, to improve my rust skills and learn how to use [WebAssembly](https://webassembly.org/), I've built [{{< ico bootstrap github >}} loiccoyle/phomo-rs](https://github.com/loiccoyle/phomo-rs). It's a rust port of `phomo` complete with a binary crate and Wasm bindings. As well as an accompanying [web app](https://phomo.loiccoyle.com).
 
 ## The rusty part
 
-There isn't much point delving into the inner workings of the rust library itself, as it is essentially a direct port of the `phomo` python package I've previously built. **If you're curious about it, you can [read about it](https://loiccoyle.com/projects/phomo-rs).**
+There isn't much point delving into the inner workings of the rust library itself, as it is essentially a direct port of the `phomo` python package I've previously built. **If you're curious about it, you can [read about it](https://loiccoyle.com/projects/phomo).**
 
 ## The web app
 
