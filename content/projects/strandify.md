@@ -20,7 +20,7 @@ cover:
   alt: Screenshot of the strandify web app
 ---
 
-In the spirit of my previous `rust`/`WASM` [experiments](https://loiccoyle/projects/phomo_webapp.md), I've developed [`strandify`](https://loiccoyle.com/strandify), a [computational string art](https://en.wikipedia.org/wiki/String_art) web app, for all your string art needs.
+In the spirit of my previous `rust`/`WASM` [experiments](https://loiccoyle/projects/phomo_webapp.md), I've developed [`strandify`](https://strandify.loiccoyle.com), a [computational string art](https://en.wikipedia.org/wiki/String_art) web app, for all your string art needs.
 
 <h3>
   <a href="https://loiccoyle.com/strandify" style="display: flex; align-items: center; justify-content: center; gap: 0.5em; background-color: cornflowerblue; border-radius: 1em; margin:auto; max-width: 10em;">
