@@ -59,7 +59,7 @@ gh copilot suggest ...
 gh copilot explain ...
 ```
 
-> Don't forget to update the `gh-copilot` extension with `gh extension upgrade --all` from time to time.
+> Don't forget to update the `gh-copilot` extension with `gh extension upgrade gh-copilot` from time to time.
 
 ## Step 2 - Installing the `zsh-gh-copilot` plugin
 
