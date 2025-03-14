@@ -53,7 +53,7 @@ params:
     - name: "linkedin"
       url: "https://linkedin.com/in/loiccoyle"
     - name: "email"
-      url: "mailto:loic.coyle@hotmail.fr"
+      url: "mailto:loic.coyle@outlook.com"
 
   # analytics:
   #   google:
